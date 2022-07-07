@@ -46,6 +46,7 @@ function App() {
           <Route path='dashboard' element={<Dashboard data={{data,student,setStudent}} />}/>
           <Route path='create-student' element={<CreateStudent/>}/>
           <Route path='edit-student' element={<EditStudent/>}/>
+          <Route path='*' element={<Dashboard data={{data,student,setStudent}}/>}/>
       </Routes>
   </BrowserRouter>
     
